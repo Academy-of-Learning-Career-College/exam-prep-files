@@ -1,4 +1,4 @@
-$folders = Get-ChildItem "Practical_Exam_Kit" -Recurse -Directory
+$folders = Get-ChildItem "*Component_Kit" -Recurse -Directory
 
 foreach ($folder in $folders ) {
 #    Write-Host $folder.Parent
