@@ -15,7 +15,7 @@ for folder in ${folders[@]}; do
     # Set the destination path for the zip file
     # Change into the directory
     pushd "$folder" > /dev/null
-    dest="./Practical_Exam_Kit.zip"
+    dest="../Practical_Exam_Kit.zip"
     # Compress the files in the current directory without the folder structure
     zip -r -q -D -u "$dest" ./*
     # Return to the previous directory
