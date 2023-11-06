@@ -13,9 +13,9 @@ for folder in ${folders[@]}; do
     # Get the parent directory of the folder
     parent=$(dirname "$folder")
     # Set the destination path for the zip file
-    dest="$parent/Practical_Exam_Kit.zip"
     # Change into the directory
     pushd "$folder" > /dev/null
+    dest="./Practical_Exam_Kit.zip"
     # Compress the files in the current directory without the folder structure
     zip -r -q -D -u "$dest" ./*
     # Return to the previous directory
