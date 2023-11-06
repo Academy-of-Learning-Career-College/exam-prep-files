@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the reference time, e.g., 1 day ago
-reference_time="7 days ago"
+reference_time="1 day ago"
 
 # Find all directories that end with "Component_Kit"
 folders=$(find . -type d -name "*Component_Kit")
@@ -14,9 +14,13 @@ for folder in ${folders[@]}; do
     parent=$(dirname "$folder")
     # Set the destination path for the zip file
     dest="$parent/Practical_Exam_Kit.zip"
-    # Compress the folder and overwrite the zip file if it exists
-    zip -r -q "$dest" "$folder"
-    echo "Directory $folder has changed recently. Zip file created."
+    # Change into the directory
+    pushd "$folder" > /dev/null
+    # Compress the files in the current directory without the folder structure
+    zip -r -q -j "$dest" ./*
+    # Return to the previous directory
+    popd > /dev/null
+    echo "Directory $folder has changed recently. Flat zip file created."
   else
     echo "Directory $folder has not changed recently. No zip file created."
   fi
