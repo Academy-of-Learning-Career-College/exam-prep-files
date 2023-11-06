@@ -17,7 +17,7 @@ for folder in ${folders[@]}; do
     # Change into the directory
     pushd "$folder" > /dev/null
     # Compress the files in the current directory without the folder structure
-    zip -r -q -j "$dest" ./*
+    zip -r -q -D -u "$dest" ./*
     # Return to the previous directory
     popd > /dev/null
     echo "Directory $folder has changed recently. Flat zip file created."
