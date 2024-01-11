@@ -1,16 +1,38 @@
 # Academy of Learning Career College Exam Prep Kits
 
-Welcome to the Academy of Learning Career College Exam Prep Kits repository.
+Welcome to the **Academy of Learning Career College Exam Prep Kits** repository. This platform is dedicated to providing the latest resources for exam preparation.
 
-NOTE: If you are a student, please stop reading here as you should not be accessing these files from this page. Please speak with your campus Learning Coaches. 
+## Important Notice for Students
+**If you are a student, please refrain from accessing these files directly from this page.** For access to exam preparation materials, kindly consult with your campus Learning Coaches.
 
-# Staff
-To update the exam kits linked on [aolccbc.com/examkits](https://aolccbc.com/examkits) follow these steps.
+## Instructions for Staff
+To update the exam kits linked on our [Exam Kits Page](https://aolccbc.com/examkits), please adhere to the following procedure:
 
-1. Clone this repo to your local machine.
-2. Download the updated files from canvas.
-3. replace the files in the appropriate course folder.
-4. Open Powershell
-5. Run `Set-ExecutionPolicy -Scope Process Bypass` then `./UpdateZipFiles.ps1`. The script compresses all the Practical Exam Kits, then commits and pushes the changes to Github.
-6. If prompted, sign into Github with the account that has access to the `Academy-of-Learning-Career-College` org on github. If you don't have access, ask Mike Ross.
-7. Once completed, the files will be up to date.
+### Step-by-Step Guide
+
+1. **Clone the Repository:**
+   - Clone this repository to your local machine for direct access to the files.
+
+2. **Download Updated Files:**
+   - Retrieve the latest files from Canvas to ensure you have the most current versions.
+
+3. **Replace Files:**
+   - In the corresponding course folder within the cloned repository, replace the old files with the newly downloaded ones.
+
+4. **Utilize PowerShell:**
+   - Open PowerShell on your computer to execute the necessary scripts.
+
+5. **Execute Scripts:**
+   - Run the following commands:
+     ```
+     Set-ExecutionPolicy -Scope Process Bypass
+     ./UpdateZipFiles.ps1
+     ```
+   - These scripts will compress all Practical Exam Kits, then commit and push the changes to GitHub.
+
+6. **GitHub Authentication:**
+   - When prompted, sign into GitHub with an account that has access to the `Academy-of-Learning-Career-College` organization.
+   - If you do not have access, please contact Mike Ross for authorization.
+
+7. **Completion:**
+   - After completing these steps, the files on the repository will be up to date and ready for use.
